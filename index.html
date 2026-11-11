@@ -9,32 +9,45 @@
 body {
     font-family: Georgia, serif;
     margin: 0;
-    background: #f5f2eb;
+    background-color: #f5f2eb;
     color: #333;
 }
 
 header {
-    background: #2c3e50;
+    background-color: #2c3e50;
     color: white;
     text-align: center;
-    padding: 40px;
+    padding: 50px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.2em;
 }
 
 nav {
-    background: #34495e;
-    text-align: center;
+    background-color: #34495e;
     padding: 15px;
+    text-align: center;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 20px;
     font-weight: bold;
 }
 
+nav a:hover {
+    color: #f1c40f;
+}
+
 main {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     padding: 30px;
 }
@@ -46,13 +59,39 @@ main {
 .hero img {
     width: 250px;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+
+.book-preview {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.book-preview img {
+    width: 180px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0,0,0,.3);
+}
+
+.social {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.social a {
+    margin: 0 15px;
+    font-weight: bold;
 }
 
 footer {
-    background: #2c3e50;
+    background-color: #2c3e50;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
+    margin-top: 40px;
 }
 </style>
 </head>
@@ -73,26 +112,50 @@ footer {
 <main>
 
 <div class="hero">
-    <img src="author.jpg" alt="M. C. Reed">
+    <img src="AuthorMC.jpg" alt="Author M.C. Reed">
 </div>
 
 <h2>Welcome</h2>
 
 <p>
-Welcome to my author website. I write fantasy stories inspired by the mountains,
-lakes, and landscapes of the Rocky Mountains. My stories focus on ordinary
-people discovering extraordinary destinies.
+Welcome to the official website of M. C. Reed, author of
+<i>The Lost Queen</i>, <i>The Queen Divided</i>, and
+<i>Cinder's First Quest</i>.
 </p>
 
 <p>
-Explore the site to learn more about me, my writing journey, and my current
-projects.
+Inspired by the mountains and lakes of the Rocky Mountains,
+M. C. Reed creates stories filled with adventure, courage,
+magic, and unforgettable characters. Whether writing epic fantasy
+or children's adventures, each story explores how ordinary people
+can discover extraordinary destinies.
 </p>
+
+<h2>Featured Books</h2>
+
+<div class="book-preview">
+    <img src="LostQueenCover.png" alt="The Lost Queen">
+    <img src="QueenDividedCover.png" alt="The Queen Divided">
+    <img src="CinderCover.png" alt="Cinder's First Quest">
+</div>
+
+<div class="social">
+    <h2>Connect with M. C. Reed</h2>
+
+    <p>
+        <a href="https://www.amazon.com/dp/B0H41K44VF">Amazon Author Books</a>
+    </p>
+
+    <p>
+        <a href="https://www.tiktok.com/@authormcreed">TikTok</a> |
+        <a href="https://www.facebook.com/AuthorMCReed">Facebook</a>
+    </p>
+</div>
 
 </main>
 
 <footer>
-© 2026 M. C. Reed
+© 2026 M. C. Reed | All Rights Reserved
 </footer>
 
 </body>
